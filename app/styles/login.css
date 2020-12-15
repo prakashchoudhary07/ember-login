@@ -1,0 +1,40 @@
+.form-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.no-link {
+    text-decoration: none;
+}
+
+.input-form {
+    width: 300px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-text {
+    margin: 0 0 20px 0;
+    height: 24px;
+}
+
+.label-text {
+    font-size: 14px;
+    margin: 5px 0 5px 0;
+}
+
+.form-button {
+    height: 30px;
+    font-size: 20px;
+}
+
+.error-message {
+    color: red;
+    font-size: 16px;
+}
+

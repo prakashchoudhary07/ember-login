@@ -1,0 +1,29 @@
+<div class="form-container">
+
+    <h2>Login</h2>
+
+    <form class="input-form" {{on "submit" this.loignUser}}>
+
+        <label class="label-text" for="username">Username or email address</label>
+        <Input class="input-text" @type="username" @value={{this.username}}  />
+
+        <label class="label-text" for="password">Password</label>
+        <Input class="input-text" @type="password" @value={{this.password}}  />
+
+        <button class="form-button" type="submit">Log In</button>
+
+    </form>
+
+    <div class="registration">
+        <p>
+            Are you new here?
+            <LinkTo class="no-link" @route="register">Sign up</LinkTo>
+        </p>
+
+    </div>
+
+    <div class="error-message">
+        <p> {{this.errorMessage}} </p>
+    </div>
+
+</div>

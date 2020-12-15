@@ -1,0 +1,31 @@
+<div class="form-container">
+
+    <h2>Register</h2>
+
+    <form class="input-form" {{on "submit" this.registerUser}}>
+
+        <label class="label-text" for="username">Username</label>
+        <Input class="input-text" @type="username" @value={{this.username}} required />
+
+        <label class="label-text" for="username">Email address</label>
+        <Input class="input-text" @type="email" @value={{this.email}} required />
+
+        <label class="label-text" for="password">Password</label>
+        <Input class="input-text" @type="password" @value={{this.password}} required />
+
+        <button class="form-button" type="submit">Sign up</button>
+
+    </form>
+
+    <div class="registration">
+        <p>
+            Have you been here?
+            <LinkTo class="no-link" @route="login">Log In</LinkTo>
+        </p>
+    </div>
+
+    <div class="error-message">
+        <p> {{this.errorMessage}} </p>
+    </div>
+
+</div>
